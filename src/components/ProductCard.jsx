@@ -1,14 +1,14 @@
 // src/components/ProductCard.jsx
 import { useCart } from "../context/CartContext";
 
-export default function ProductCard({ title, image, price, sale, oldPrice, rating, action }) {
+export default function ProductCard({ id,title, image, price, sale, oldPrice, rating, action }) {
   const { addItem } = useCart();
 
   const handleAddToCart = () => {
     addItem({
-      id: product.id,
-      name: product.name,
-      price: product.price,
+      id: id,
+      name: title,
+      price: Number(price),
       quantity: 1,
     });
   };

@@ -3,67 +3,74 @@ import ProductCard from './ProductCard';
 
 const products = [
   {
+    id: 1,
     title: "Fancy Product",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-    price: "$40.00 - $80.00",
+    price: 40.00,
     action: "Add to cart",
   },
   {
+    id: 2,
     title: "Special Item",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-    price: "$18.00",
+    price: 18.00,
+    oldPrice: 20.00,
+    sale: true,
+    rating: 5,
+    action: "Add to cart",
+  },
+  {
+    id: 3,
+    title: "Fancy Product",
+    image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+    price: 80.00,
+    action: "Add to cart",
+  },
+  {
+    id: 4,
+    title: "Special Item",
+    image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+    price: 18.00,
     oldPrice: "$20.00",
     sale: true,
     rating: 5,
     action: "Add to cart",
   },
-    {
+  {
+    id: 6,
     title: "Fancy Product",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-    price: "$40.00 - $80.00",
+    price: 40.00,
     action: "Add to cart",
   },
   {
+    id: 7,
     title: "Special Item",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-    price: "$18.00",
-    oldPrice: "$20.00",
+    price: 18.00,
+    oldPrice: 20.00,
     sale: true,
     rating: 5,
     action: "Add to cart",
   },
-    {
+  {
+    id: 8,
     title: "Fancy Product",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-    price: "$40.00 - $80.00",
+    price: 80.00,
     action: "Add to cart",
   },
   {
+    id: 9,
     title: "Special Item",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-    price: "$18.00",
-    oldPrice: "$20.00",
-    sale: true,
-    rating: 5,
-    action: "Add to cart",
-  },
-    {
-    title: "Fancy Product",
-    image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-    price: "$40.00 - $80.00",
-    action: "Add to cart",
-  },
-  {
-    title: "Special Item",
-    image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-    price: "$18.00",
+    price: 18.00,
     oldPrice: "$20.00",
     sale: true,
     rating: 5,
     action: "Add to cart",
   },
 ];
-
 export default function ProductList() {
   return (
     <section>
