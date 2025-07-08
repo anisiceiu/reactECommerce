@@ -1,8 +1,15 @@
 // src/components/Navbar.jsx
 import { Link } from "react-router-dom";
 import Cart from "./Cart";
+import { useCart } from "../context/CartContext";
 
 export default function Navbar() {
+  const { cartItems } = useCart();
+  const totalQuantity = cartItems.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,7 +40,7 @@ export default function Navbar() {
                 data-bs-target="#cartDrawer" className="btn btn-outline-dark" type="button">
                 <i className="bi-cart-fill me-1"></i>
                 Cart
-                <span className="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                <span className="badge bg-dark text-white ms-1 rounded-pill">{totalQuantity}</span>
               </button>
             </form>
           </div>

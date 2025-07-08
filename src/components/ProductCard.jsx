@@ -1,5 +1,18 @@
 // src/components/ProductCard.jsx
+import { useCart } from "../context/CartContext";
+
 export default function ProductCard({ title, image, price, sale, oldPrice, rating, action }) {
+  const { addItem } = useCart();
+
+  const handleAddToCart = () => {
+    addItem({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      quantity: 1,
+    });
+  };
+
   return (
     <div className="col mb-5">
       <div className="card h-100">
@@ -26,7 +39,7 @@ export default function ProductCard({ title, image, price, sale, oldPrice, ratin
         </div>
         <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
           <div className="text-center">
-            <a className="btn btn-outline-dark mt-auto" href="#">{action}</a>
+            <a onClick={handleAddToCart} className="btn btn-outline-dark mt-auto" href="#">{action}</a>
           </div>
         </div>
       </div>

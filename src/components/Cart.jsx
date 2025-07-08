@@ -1,7 +1,17 @@
 import { useState } from "react";
 import { FaPlus, FaMinus, FaTrash } from "react-icons/fa";
+import { useCart } from "../context/CartContext";
+
 
 export default function CartDrawer() {
+    const {
+    cartItems,
+    increaseQty,
+    decreaseQty,
+    removeItem,
+    calculateTotal,
+  } = useCart();
+/* 
   const [cartItems, setCartItems] = useState([
     { id: 1, name: "Fancy Product", price: 40.0, quantity: 2 },
     { id: 2, name: "Special Item", price: 18.0, quantity: 1 },
@@ -34,14 +44,13 @@ export default function CartDrawer() {
       (total, item) => total + item.price * item.quantity,
       0
     );
-  };
+  }; */
 
   return (
-    <div
-    >
+    <div>
       
-      <div className="offcanvas-body">
-        {cartItems.length === 0 ? (
+      <div >
+         {cartItems.length === 0 ? (
           <p>Your cart is empty.</p>
         ) : (
           <>

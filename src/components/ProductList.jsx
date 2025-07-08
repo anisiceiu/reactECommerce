@@ -6,7 +6,7 @@ const products = [
     title: "Fancy Product",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
     price: "$40.00 - $80.00",
-    action: "View options",
+    action: "Add to cart",
   },
   {
     title: "Special Item",
@@ -21,7 +21,7 @@ const products = [
     title: "Fancy Product",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
     price: "$40.00 - $80.00",
-    action: "View options",
+    action: "Add to cart",
   },
   {
     title: "Special Item",
@@ -36,7 +36,7 @@ const products = [
     title: "Fancy Product",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
     price: "$40.00 - $80.00",
-    action: "View options",
+    action: "Add to cart",
   },
   {
     title: "Special Item",
@@ -51,7 +51,7 @@ const products = [
     title: "Fancy Product",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
     price: "$40.00 - $80.00",
-    action: "View options",
+    action: "Add to cart",
   },
   {
     title: "Special Item",
