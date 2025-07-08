@@ -37,14 +37,14 @@ const products = [
     action: "Add to cart",
   },
   {
-    id: 6,
+    id: 5,
     title: "Fancy Product",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
     price: 40.00,
     action: "Add to cart",
   },
   {
-    id: 7,
+    id: 6,
     title: "Special Item",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
     price: 18.00,
@@ -54,14 +54,14 @@ const products = [
     action: "Add to cart",
   },
   {
-    id: 8,
+    id: 7,
     title: "Fancy Product",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
     price: 80.00,
     action: "Add to cart",
   },
   {
-    id: 9,
+    id: 8,
     title: "Special Item",
     image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
     price: 18.00,
