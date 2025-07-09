@@ -16,3 +16,27 @@ main {
 .offcanvas.custom-cart-drawer {
   width: 600px;
 }
+
+.card-img-top {
+  object-fit: cover; /* Ensures image covers the space without distortion */
+  width: 100%; /* Takes full width of its container */
+  height: auto; /* Maintains aspect ratio */
+  max-width: 262px; /* Default max-width */
+  max-height: 175px; /* Default max-height */
+  border-radius: 8px; /* Optional: Rounded corners */
+  transition: transform 0.3s ease; /* Optional: Hover effect */
+}
+
+/* Hover effect (optional) */
+.card-img-top:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Media Query for Small Devices (Mobile) */
+@media (max-width: 768px) {
+  .card-img-top {
+    max-width: 100%; /* Full width on small screens */
+    max-height: 110px; /* Removes fixed height restriction */
+    height: auto; /* Adjusts height proportionally */
+  }
+}

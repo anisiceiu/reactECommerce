@@ -10,41 +10,8 @@ export default function CartDrawer() {
     decreaseQty,
     removeItem,
     calculateTotal,
+    clearCart
   } = useCart();
-/* 
-  const [cartItems, setCartItems] = useState([
-    { id: 1, name: "Fancy Product", price: 40.0, quantity: 2 },
-    { id: 2, name: "Special Item", price: 18.0, quantity: 1 },
-  ]);
-
-  const increaseQty = (id) => {
-    setCartItems((prev) =>
-      prev.map((item) =>
-        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
-      )
-    );
-  };
-
-  const decreaseQty = (id) => {
-    setCartItems((prev) =>
-      prev.map((item) =>
-        item.id === id
-          ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 1 }
-          : item
-      )
-    );
-  };
-
-  const removeItem = (id) => {
-    setCartItems((prev) => prev.filter((item) => item.id !== id));
-  };
-
-  const calculateTotal = () => {
-    return cartItems.reduce(
-      (total, item) => total + item.price * item.quantity,
-      0
-    );
-  }; */
 
   return (
     <div>
@@ -101,6 +68,9 @@ export default function CartDrawer() {
               <h6>Total: ${calculateTotal().toFixed(2)}</h6>
               <button className="btn btn-primary w-100 mt-2">
                 Checkout
+              </button>
+               <button onClick={()=>clearCart()} className="btn btn-danger w-100 mt-2">
+                Clear Cart
               </button>
             </div>
           </>
